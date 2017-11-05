@@ -62,11 +62,11 @@ $string['removetmpfiles'] = 'Eski H5P geçici dosyalarını kaldır';
 $string['removeoldlogentries'] = 'Eski H5P kütük girdilerini kaldır';
 
 // Admin settings.
-$string['displayoptionnevershow'] = 'Never show';
-$string['displayoptionalwaysshow'] = 'Always show';
-$string['displayoptionpermissions'] = 'Show only if user has permissions to export H5P';
-$string['displayoptionauthoron'] = 'Controlled by author, default is on';
-$string['displayoptionauthoroff'] = 'Controlled by author, default is off';
+$string['displayoptionnevershow'] = 'Hiç gösterme';
+$string['displayoptionalwaysshow'] = 'Her zaman göster';
+$string['displayoptionpermissions'] = 'Sadece kullanıcının H5Pi dışa aktarma izni olduğunda göster';
+$string['displayoptionauthoron'] = 'Yazar tarafından kontrol edildi, varsayılan olarak açık';
+$string['displayoptionauthoroff'] = 'Yazar tarafından kontrol edildi, varsayılan olarak kapalı';
 $string['displayoptions'] = 'Seçenekleri Göster';
 $string['enableframe'] = 'Eylem çubuğunu ve çerçevesini göster';
 $string['enabledownload'] = 'İndirme tuşu';
@@ -74,8 +74,8 @@ $string['enableembed'] = 'Katma tuşu';
 $string['enablecopyright'] = 'Telif hakkı tuşu';
 $string['enableabout'] = 'H5P bilgisi tuşu';
 
-$string['sendusagestatistics'] = 'Contribute usage statistics';
-$string['sendusagestatistics_help'] = 'Usage statistics numbers will automatically be reported to help the developers better understand how H5P is used and to determine potential areas of improvement. Read more about which <a {$a}>data is collected on h5p.org</a>.';
+$string['sendusagestatistics'] = 'Kullanım istatistiklerine katkıda bulunun';
+$string['sendusagestatistics_help'] = 'Kullanım istatistiklerindeki sayılar, H5P nin nasıl kullanıldığını daha iyi anlamak ve geliştirilecek potansiyel alanları belirlemek için geliştiricilere yardımcı olmak için otomatik olarak raporlanacaktır. <a {$a}> h5p.org adresinde hangi verilerin kullanıldığı </a> hakkında daha fazla bilgi okuyabilirsiniz.';
 $string['enablesavecontentstate'] = 'İçerik durumunu kaydet';
 $string['enablesavecontentstate_help'] = 'Her bir kullanıcı için mevcut etkileşimsel çerik durumunu kendiliğinden kaydet. Böylece kullanıcı bıraktığı yerden devam edebilir.';
 $string['contentstatefrequency'] = 'İçerik durumunu kaydetme sıklığı';
@@ -97,12 +97,12 @@ $string['upload'] = 'Yükle';
 $string['installedlibraries'] = 'Kurulu Kitaplıklar';
 $string['invalidtoken'] = 'Güvenlik bilgisi geçersiz.';
 $string['missingparameters'] = 'Parametreler eksik';
-$string['nocontenttype'] = 'No content type was specified.';
-$string['invalidcontenttype'] = 'The chosen content type is invalid.';
-$string['installdenied'] = 'You do not have permission to install content types. Contact the administrator of your site.';
-$string['downloadfailed'] = 'Downloading the requested library failed.';
-$string['validationfailed'] = 'The requested H5P was not valid';
-$string['validatingh5pfailed'] = 'Validating h5p package failed.';
+$string['nocontenttype'] = 'İçerik türü tanımlanmadı.';
+$string['invalidcontenttype'] = 'Seçili içerik türü geçersizdir.';
+$string['installdenied'] = 'İçerik türü yüklemek için izniniz yoktur. Site yöneticinizle iletişime geçiniz.';
+$string['downloadfailed'] = 'İstenen kütüphaneyi indirme başarısız oldu.';
+$string['validationfailed'] = 'İstenen H5P geçersizdir.';
+$string['validatingh5pfailed'] = 'h5p paketini doğrulama başarısız oldu.';
 
 // H5P library list headers on admin page.
 $string['librarylisttitle'] = 'Başlık';
@@ -150,12 +150,12 @@ $string['nextpage'] = 'Sonraki sayfa';
 $string['previouspage'] = 'Önceki sayfa';
 $string['search'] = 'Ara';
 $string['empty'] = 'Sonuç yok';
-$string['viewreportlabel'] = 'Report';
-$string['dataviewreportlabel'] = 'View Answers';
-$string['invalidxapiresult'] = 'No xAPI results were found for the given content and user id combination';
-$string['reportnotsupported'] = 'Not supported';
-$string['reportingscorelabel'] = 'Score:';
-$string['reportingscaledscorelabel'] = 'Gradebook score:';
+$string['viewreportlabel'] = 'Rapor';
+$string['dataviewreportlabel'] = 'Cevapları İncele';
+$string['invalidxapiresult'] = 'Verilen içerik ve kullanıcı id numarası kombinasyonu için xAPI sonuçları bulunamadı';
+$string['reportnotsupported'] = 'Desteklenmiyor';
+$string['reportingscorelabel'] = 'Puan:';
+$string['reportingscaledscorelabel'] = 'Not cetveli puanı:';
 $string['reportingscoredelimiter'] = 'out of';
 $string['reportingscaledscoredelimiter'] = ',';
 
@@ -172,8 +172,8 @@ $string['noparameters'] = 'Parametre yok';
 $string['invalidparameters'] = 'Parametreler geçersiz';
 $string['missingcontentuserdata'] = 'Hata: İçerik kullanıcısı verisi bulunamadı';
 
-$string['maximumgrade'] = 'Maximum grade';
-$string['maximumgradeerror'] = 'Please enter a valid positive integer as the max points available for this activity';
+$string['maximumgrade'] = 'Maksimum puan';
+$string['maximumgradeerror'] = 'Bu etkinlik için maksimum puan olarak geçerli pozitif bir sayı giriniz.';
 
 // Capabilities.
 $string['hvp:addinstance'] = 'Yeni bir H5P Etkinliği ekle';
@@ -183,7 +183,7 @@ $string['hvp:userestrictedlibraries'] = 'Kısıtlı H5P kitaplıkları kullan';
 $string['hvp:savecontentuserdata'] = 'H5P içerik kullanıcısı verisini kaydet';
 $string['hvp:saveresults'] = 'H5P içeriği için sonucu kaydet';
 $string['hvp:viewresults'] = 'H5P içeriği için sonucu gör';
-$string['hvp:viewallresults'] = 'View result for all users in course';
+$string['hvp:viewallresults'] = 'Dersteki tüm kullanıcılar için sonuçları incele';
 $string['hvp:getcachedassets'] = 'Ön belleğe alınmış H5P içerik değerlerini al';
 $string['hvp:getcontent'] = 'Kurs içìndeki H5P dosyası içeriğini al/gör';
 $string['hvp:getexport'] = 'Kurs içindeki H5P içeriğinden dışa aktarma dosyası al';
@@ -263,8 +263,8 @@ $string['pddl'] = 'Public Domain Dedication and Licence';
 $string['pdm'] = 'Public Domain Mark';
 $string['copyrightstring'] = 'Telif hakkı';
 $string['by'] = 'by';
-$string['showmore'] = 'Show more';
-$string['showless'] = 'Show less';
+$string['showmore'] = 'Daha fazla';
+$string['showless'] = 'Daha az';
 $string['sublevel'] = 'Sublevel';
 $string['noversionattribution'] = 'Attribution';
 $string['noversionattributionsa'] = 'Attribution-ShareAlike';
